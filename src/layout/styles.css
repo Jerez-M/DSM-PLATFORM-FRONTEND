@@ -1,0 +1,32 @@
+
+.user-nav-img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.ant-nav-bar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+@media screen and (max-width: 991px) {
+    .site-layout {
+        margin-left: 56px;
+    }
+
+    .ant-nav-bar {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .site-layout {
+        margin-left: 250px;
+    }
+}

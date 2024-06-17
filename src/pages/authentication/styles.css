@@ -1,0 +1,38 @@
+.banner-image {
+    height: 50vh;
+}
+
+.login-container {
+    height: 100vh;
+    background: #e5e5e5;
+}
+
+.ads-banner {
+    min-height: 100px;
+}
+
+.advert-image {
+    margin: 0 40px;
+}
+
+.login-card {
+    min-height: 50vh;
+}
+
+@media screen and (min-width: 768px) {
+    .login-card {
+        min-width: 370px;
+        min-height: 50vh;
+    }
+
+    .advert-image {
+        height: 80px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    .moreProducts {
+        display: none;
+    }
+}

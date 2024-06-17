@@ -1,0 +1,96 @@
+#stamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stamp-rectangle {
+  border: 1px solid black;
+  width: 200px; /* Set your desired width */
+  height: 120px; /* Set your desired height */
+  padding: 10px;
+  transform: rotate(10deg);
+  background-color: #f0f0f0; /* Set your desired background color */
+  overflow: hidden; /* Added to hide overflowing text */
+}
+
+#stamp-rectangle h1 {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  overflow: hidden; /* Added to hide overflowing text */
+  text-overflow: ellipsis; /* Added to add ellipsis (...) for long text */
+  white-space: wrap; /* Added to prevent line breaks */
+}
+
+#stamp-rectangle #stamp-date,
+#stamp-rectangle #stamp-address {
+  font-size: 10px;
+  font-weight: bold;
+  overflow: hidden; /* Added to hide overflowing text */
+  text-overflow: ellipsis; /* Added to add ellipsis (...) for long text */
+  white-space: wrap; /* Added to prevent line breaks */
+}
+
+#stamp-rectangle p {
+  margin: 1px 0; /* Updated to adjust top and bottom margin */
+}
+
+#stamp-rectangle span {
+  font-size: 12px;
+  font-weight: lighter;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 991px) {
+  #stamp-rectangle {
+    border: 1px solid black;
+    transform: rotate(0deg);
+    margin-left: 15px;
+  }
+
+  #stamp-rectangle h1 {
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  #stamp-rectangle #stamp-date {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  #stamp-rectangle #stamp-address {
+    font-size: 10px;
+  }
+
+  #stamp-rectangle p {
+    margin: 1px 0; /* Updated to adjust top and bottom margin */
+  }
+
+  #stamp-rectangle span {
+    font-size: 9px;
+    font-weight: lighter;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 1004px) {
+  #stamp {
+    display: none; /* Hide the stamp container */
+  }
+}
+
+.custom-row {
+    background-color: #e6f7ff; /* Light Blue */
+  }
+  
+  .ant-table-tbody > tr.ant-table-row:hover > td {
+    background-color: #d6eaff; /* Lighter shade of Blue on hover */
+  }
+  
+  .ant-table-thead > tr > th {
+    background-color: #f0f5ff; /* Light Blue for table header */
+  }

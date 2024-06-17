@@ -1,0 +1,109 @@
+ul.ant-menu li.ant-menu-submenu div[role='menuitem'] {
+    margin: 0 0 5px;
+    width: 100%;
+    border-radius: 0;
+}
+
+.ant-menu-item-selected {
+    color: #39b54a;
+    background-color: #39b54a;
+    border-right: 3px solid #39b54a;
+}
+
+:where(.css-dev-only-do-not-override-xu9wm8).ant-menu-dark .ant-menu-item-selected, :where(.css-dev-only-do-not-override-xu9wm8).ant-menu-dark>.ant-menu .ant-menu-item-selected {
+    color: #d9e3db;
+}
+
+:where(.css-dev-only-do-not-override-xu9wm8).ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-submenu-title:active, :where(.css-dev-only-do-not-override-xu9wm8).ant-menu-dark>.ant-menu:not(.ant-menu-horizontal) .ant-menu-submenu-title:active {
+    background-color: #39b54a;
+}
+
+:where(.css-dev-only-do-not-override-xu9wm8).ant-menu-dark .ant-menu-submenu-selected >.ant-menu-submenu-title, :where(.css-dev-only-do-not-override-xu9wm8).ant-menu-dark>.ant-menu .ant-menu-submenu-selected >.ant-menu-submenu-title {
+    color: #39b54a;
+}
+
+ul.ant-menu.ant-menu-sub.ant-menu-vertical {
+    border-radius: 0;
+}
+
+.ant-tabs-top > .ant-tabs-nav::before { /* For the line to the right and close to the tabs */
+    border-color: #dadada;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.37);
+    border-radius: 10px;
+}
+
+.blue-float-btn{
+    background: #2ba5d2 !important;
+}
+
+:where(.css-dev-only-do-not-override-1xqp6xr).ant-float-btn-primary {
+    background-color: #2ba5d2 !important;
+}
+
+.only-print {
+    display: none;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #969ca2;
+    padding-bottom: 10px;
+    margin-top: 14px;
+}
+
+.card-bg-light {
+    background-color: #d7d7d7
+}
+
+.text-warn {
+    color: #fa7414;
+}
+
+.ql-editor{
+    min-height: 600px;
+    overflow: auto;
+}
+
+.fill-window {
+    margin-top: 64px;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*overflow: hidden;*/
+}
+
+@media print {
+    .hide-print {
+        display: none
+    }
+
+    .print-margins {
+        margin: 24px 32px;
+    }
+
+    .print-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .only-print {
+        display: block;
+    }
+}

@@ -1,0 +1,6 @@
+const VEHICLE_TRANSMISSION = [
+    "AUTOMATIC",
+    "MANUAL",
+]
+
+export default VEHICLE_TRANSMISSION;
